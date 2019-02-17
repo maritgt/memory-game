@@ -41,8 +41,12 @@ body {
 	border-radius: 5px;
 	backface-visibility: hidden;
 }
+.back-face {
+	background: #868686;
+}
 .front-face {
-  transform: rotateY(180deg);
+	background: #ffffff;
+	transform: rotateY(180deg);
 }
 .memory-card:active {
 	transform: scale(0.97);
