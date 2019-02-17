@@ -5,9 +5,17 @@
 	box-sizing: border-box;
 }
 body {
+	background: #ededed;
+	height: 100vh;
+}
+header {
+	background: #fff;
+	width: 100%;
+	padding: 20px;
+}
+main {
 	height: 100vh;
 	display: flex;
-	background: #ededed;
 }
 
 
@@ -18,7 +26,7 @@ body {
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
-	perspective: 1000px; //adds a bit of perspective to the flip effect
+	perspective: 1000px; /*adds a bit of perspective to the flip effect*/
 }
 .memory-card {
 	width: calc(25% - 10px);
@@ -57,4 +65,13 @@ body {
 
 .memory-card.flip {
   transform: rotateY(180deg);
+}
+
+
+@media only screen and (max-width: 600px) {
+	
+	.memory-card {
+		width: calc(33.333% - 10px);
+		padding-bottom: 31.5%;
+	}
 }
